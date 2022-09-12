@@ -13,9 +13,14 @@ body{
 /* End global rules*/
 
 /* Start variables */
+
+
+
+
+
 .parent{
    height: 100vh;
-   width: 85vw;
+   width: 100vw;
    margin: auto;
    background-color: #020057;
 }
@@ -34,17 +39,17 @@ nav a{
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 7vw repeat(12, 1fr) 7vw;
     grid-template-rows: 64px repeat(4, 1fr) 64px;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     }
     
-     .logo { grid-area: 1 / 1 / 2 / 4; }
-    nav{ grid-area: 1 / 5 / 2 / 13; }
-    .pr{ grid-area: 2 / 1 / 6 / 8; }
-    .pht { grid-area: 2 / 8 / 6 / 13; }
-    .foot { grid-area: 6 / 1 / 7 / 13; }
+    .foot { grid-area: 6 / 1 / 7 / 15; }
+    .pr { grid-area: 2 / 2 / 6 / 9; }
+    .pht { grid-area: 2 / 9 / 6 / 14; }
+    .logo{ grid-area: 1 / 2 / 2 / 5; }
+    nav{ grid-area: 1 / 6 / 2 / 14; }
 
 .logo, nav {
     margin-top: 0px;
@@ -61,12 +66,15 @@ nav{
     align-items: center;
     }
   
-.foot{
+.foot0{
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
+}
+.foot{
+    background-color: white;
 }
 .fr{
     color: black;
@@ -88,21 +96,7 @@ nav{
     border-radius: 30px;
    
 }
-.caro{
-    width: 7.5vw;
-    height: 64px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-}
-.caro1{
-    width: 7.5vw;
-    height: 64px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
+
 a:hover{
     color: #F14141;
    
@@ -128,7 +122,7 @@ a:hover{
 .point{
     width: 109px;
     height: 64px;
-    background-color: white;
+    background-color :white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,24 +181,20 @@ a:hover{
     height: 459px;
     width: 385px;
     background-position: center;
-    background-image: url(../image/Mathematics-amico.png);
-    background-size: contain;
+    background-image: url(../image/Untitled\ design.png);
+    background-size: cover;
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pht::before{
-    content: "";
-   height:40px  ;
-   width: 299px ;
-   background-color: #020057;
-   position: absolute;
-   top:79px;
-}
-.pht1{
-    height: 10%;
-    width: 100%;
-    background-color: #020057;
-    position: relative;
-    bottom: -207px;
-}
+
+.foot {
+    display: grid;
+    grid-template-columns: 7vw repeat(12, 1fr) 7vw;
+    grid-template-rows: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
+    }
+    
+    .foot0 { grid-area: 1 / 2 / 2 / 14; }
